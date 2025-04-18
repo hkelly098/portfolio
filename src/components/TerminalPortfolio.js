@@ -28,7 +28,7 @@ const TerminalPortfolio = () => {
           <span className="yellow" />
           <span className="green" />
         </div>
-        <p className="text-sm">~/kellyhuang/portfolio</p>
+        <p className="text-sm path-link" onClick={() => setActiveTab('home')}>~/kellyhuang/portfolio</p>
         <div className="terminal-tabs">
           <button 
             className={`tab-button ${activeTab === 'home' ? 'active' : ''}`}
@@ -213,7 +213,7 @@ const TerminalPortfolio = () => {
             </h1>
             <div className="resume-preview">
               <p>Click below to view or download my resume:</p>
-              <a href="portfolio/resume.pdf" className="resume-link" target="_blank" rel="noopener noreferrer">
+              <a href="/portfolio/resume.pdf" className="resume-link" target="_blank" rel="noopener noreferrer">
                 View Resume (PDF)
               </a>
             </div>

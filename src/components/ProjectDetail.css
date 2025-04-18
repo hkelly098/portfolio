@@ -1,5 +1,8 @@
 .project-detail {
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-header {
@@ -9,6 +12,7 @@
   border: 1px solid #30363d;
   border-radius: 8px;
   overflow: hidden;
+  width: 100%;
 }
 
 .project-image-large {
@@ -79,6 +83,7 @@
 .project-content {
   margin-top: 24px;
   padding: 24px;
+  width: 100%;
 }
 
 .section-title {
@@ -124,20 +129,22 @@
 
 .back-button {
   display: inline-block;
-  background: #21262d;
-  color: #c9d1d9;
-  border: 1px solid #30363d;
+  background: transparent;
+  color: #56b6c2;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
   font-family: monospace;
   font-size: 0.9rem;
-  transition: background 0.2s;
+  transition: all 0.2s;
+  border: 1px solid #56b6c2;
   margin-top: 16px;
+  align-self: flex-start;
 }
 
 .back-button:hover {
-  background: #30363d;
+  background: #56b6c2;
+  color: #0d1117;
 }
 
 .error-message {
@@ -149,6 +156,8 @@
 @media (max-width: 768px) {
   .project-header {
     flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
   }
   
   .project-image-large {
@@ -159,10 +168,16 @@
   .project-title-section {
     width: 100%;
     padding: 16px;
+    box-sizing: border-box;
   }
   
   .project-content {
     padding: 16px;
+    box-sizing: border-box;
+  }
+  
+  .project-links {
+    justify-content: center;
   }
 }
 
@@ -178,9 +193,12 @@
   .project-links {
     flex-direction: column;
     gap: 8px;
+    align-items: center;
   }
   
   .github-link, .demo-link {
     text-align: center;
+    width: auto;
+    min-width: 120px;
   }
 } 

@@ -299,7 +299,7 @@
     .terminal-window {
       margin: 20px auto;
       border-radius: 8px;
-      max-width: 95%;
+      max-width: 92%;
     }
     
     .terminal-content {
@@ -353,7 +353,7 @@
   @media (max-width: 480px) {
     .terminal-window {
       margin: 10px auto;
-      max-width: 98%;
+      max-width: 92%;
     }
     
     .terminal-content {
@@ -376,5 +376,15 @@
   .terminal-header p.text-sm {
     margin-left: 10px;
     margin-right: auto;
+  }
+  
+  .path-link {
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .path-link:hover {
+    color: #2ecc71;
+    text-decoration: underline;
   }
   
