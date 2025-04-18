@@ -11,5 +11,5 @@
   <circle cx="210" cy="90" r="20" fill="#27c93f"/>
   
   <!-- Text "KH" -->
-  <text x="256" y="300" font-family="monospace" font-size="180" font-weight="bold" fill="#56b6c2" text-anchor="middle">KH</text>
+  <text x="256" y="300" font-family="monospace" font-size="180" font-weight="bold" fill="#22d3ee" text-anchor="middle">KH</text>
 </svg> 

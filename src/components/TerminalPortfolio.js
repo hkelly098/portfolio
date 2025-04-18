@@ -95,7 +95,7 @@ const TerminalPortfolio = () => {
     |  .'  / ,---. |  ||  |,--. ,--.    |  '--'  |,--.,--. ,--,--.,--,--,  ,---.  
     |  .  ' | .-. :|  ||  | \\  '  /     |  .--.  ||  ||  |' ,-.  ||      \\| .-. | 
     |  |\\   \\   --.|  ||  |  \\   '      |  |  |  |'  ''  '\\ '-'  ||  ||  |' '-' ' 
-    \`--' '--' \`----'\`--'\`--'.-'  /       \`--'  \`--' \`----'  \`--\`--'\`--''--'.\`-  /  
+     \`--''--' \`----'\`--'\`--'.-'  /       \`--'  \`--' \`----'  \`--\`--'\`--''--'.\`-  /  
                             \`---'                                          \`---'   `}
             </pre>
             <h1 className="terminal-line">
@@ -108,7 +108,7 @@ const TerminalPortfolio = () => {
             <h2 className="terminal-line" style={{ marginTop: '2rem' }}>
               <TerminalPrompt command="list skills" />
             </h2>
-            <p className="text-sm">
+            <p>
               Java, Python, React, Spring Boot, Kafka, Kubernetes, Snowflake, PostgreSQL, Docker, Git
             </p>
 
@@ -118,29 +118,29 @@ const TerminalPortfolio = () => {
             <ul style={{ listStyle: 'disc', paddingLeft: '20px' }}>
               <li>
                 <span className="text-yellow">portfolio-site/</span> – this terminal-inspired personal website [
-                <a href="#" onClick={(e) => { e.preventDefault(); setActiveTab('projects'); handleProjectClick('portfolio-site'); }}>View</a>]
+                <a href="#" className="text-cyan" onClick={(e) => { e.preventDefault(); setActiveTab('projects'); handleProjectClick('portfolio-site'); }}>View</a>]
               </li>
               <li>
                 <span className="text-yellow">kafka-pipeline/</span> – real-time event pipeline using Kafka, Kubernetes [
-                <a href="#" onClick={(e) => { e.preventDefault(); setActiveTab('projects'); handleProjectClick('kafka-pipeline'); }}>View</a>]
+                <a href="#" className="text-cyan" onClick={(e) => { e.preventDefault(); setActiveTab('projects'); handleProjectClick('kafka-pipeline'); }}>View</a>]
               </li>
               <li>
                 <span className="text-yellow">ucb-research/</span> – NLP research at UC Berkeley [
-                <a href="#" onClick={(e) => { e.preventDefault(); setActiveTab('projects'); handleProjectClick('ucb-research'); }}>View</a>]
+                <a href="#" className="text-cyan" onClick={(e) => { e.preventDefault(); setActiveTab('projects'); handleProjectClick('ucb-research'); }}>View</a>]
               </li>
             </ul>
 
             <h2 className="terminal-line" style={{ marginTop: '2rem' }}>
               <TerminalPrompt command="blog --recent" />
             </h2>
-            <p>▶ <a href="#">Lessons from Scaling Kafka Pipelines</a></p>
-            <p>▶ <a href="#">Designing a Terminal-Themed Portfolio Site</a></p>
+            <p>▶ <a href="#" className="text-cyan">Lessons from Scaling Kafka Pipelines</a></p>
+            <p>▶ <a href="#" className="text-cyan">Designing a Terminal-Themed Portfolio Site</a></p>
 
             <h2 className="terminal-line" style={{ marginTop: '2rem' }}>
               <TerminalPrompt command="show contact info" />
             </h2>
             <p>
-              Email me at <a href="mailto:kelly@example.com">kelly@example.com</a> or reach out on <a href="https://linkedin.com/in/yourusername">LinkedIn</a>.
+              Email me at <a href="mailto:kelly@example.com" className="text-cyan">kelly@example.com</a> or reach out on <a href="https://linkedin.com/in/yourusername" className="text-cyan">LinkedIn</a>.
             </p>
           </>
         )}
@@ -212,7 +212,7 @@ const TerminalPortfolio = () => {
               <TerminalPrompt command="read resume" />
             </h1>
             <div className="resume-preview">
-              <p>Click below to view or download my resume:</p>
+              <p>Click below to view my resume:</p>
               <a href="/portfolio/resume.pdf" className="resume-link" target="_blank" rel="noopener noreferrer">
                 View Resume (PDF)
               </a>
