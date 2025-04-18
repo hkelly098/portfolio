@@ -1,5 +1,6 @@
 import React from 'react';
 import TerminalPortfolio from './components/TerminalPortfolio';
+import './index.css';
 
 function App() {
   return (
