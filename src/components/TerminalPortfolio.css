@@ -1,0 +1,70 @@
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .terminal-window {
+    max-width: 900px;
+    margin: 40px auto;
+    border: 1px solid #30363d;
+    background: #0d1117;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .terminal-header {
+    background: #161b22;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .terminal-controls span {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  .red { background-color: #ff5f56; }
+  .yellow { background-color: #ffbd2e; }
+  .green { background-color: #27c93f; }
+  
+  .terminal-content {
+    padding: 24px;
+  }
+  
+  h1, h2 {
+    color: #2ecc71;
+    font-size: 1.1rem;
+  }
+  
+  .terminal-line span.command {
+    color: white;
+  }
+  
+  .terminal-line .cursor {
+    animation: blink 1s step-start infinite;
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  
+  .text-blue { color: #61afef; }
+  .text-pink { color: #d291e4; }
+  .text-yellow { color: #e5c07b; }
+  .text-cyan { color: #56b6c2; }
+  .text-sm { font-size: 0.9rem; }
+  
+  a {
+    color: #56b6c2;
+    text-decoration: underline;
+  }
+  
