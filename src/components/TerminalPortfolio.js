@@ -27,11 +27,6 @@ const TerminalPortfolio = () => {
           <span className="red" />
           <span className="yellow" />
           <span className="green" />
-          <div className="menu-button" onClick={toggleMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
         </div>
         <p className="text-sm">~/kellyhuang/portfolio</p>
         <div className="terminal-tabs">
@@ -53,6 +48,11 @@ const TerminalPortfolio = () => {
           >
             Resume
           </button>
+        </div>
+        <div className="menu-button" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         {menuOpen && (
           <div className="mobile-menu">
@@ -91,16 +91,13 @@ const TerminalPortfolio = () => {
         {activeTab === 'home' && (
           <>
             <pre className="ascii-art">
-              {`
-    ,--. ,--.      ,--.,--.             ,--.  ,--.                                
+              {`    ,--. ,--.      ,--.,--.             ,--.  ,--.                                
     |  .'  / ,---. |  ||  |,--. ,--.    |  '--'  |,--.,--. ,--,--.,--,--,  ,---.  
     |  .  ' | .-. :|  ||  | \\  '  /     |  .--.  ||  ||  |' ,-.  ||      \\| .-. | 
     |  |\\   \\   --.|  ||  |  \\   '      |  |  |  |'  ''  '\\ '-'  ||  ||  |' '-' ' 
     \`--' '--' \`----'\`--'\`--'.-'  /       \`--'  \`--' \`----'  \`--\`--'\`--''--'.\`-  /  
-                            \`---'                                          \`---'   
-              `}
+                            \`---'                                          \`---'   `}
             </pre>
-
             <h1 className="terminal-line">
               <TerminalPrompt command="whoami" />
             </h1>

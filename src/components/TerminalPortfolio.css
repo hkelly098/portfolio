@@ -129,19 +129,27 @@
     margin-bottom: 1rem;
     font-family: monospace;
     color: #8b949e;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
   }
   
   .terminal-prompt {
     font-size: 0.8rem;
     color: #8b949e;
+    white-space: nowrap;
+    margin-right: 8px;
   }
   
   .terminal-line span.command {
     color: #2ecc71;
+    white-space: nowrap;
+    margin-right: 4px;
   }
   
   .terminal-line .cursor {
     animation: blink 1s step-start infinite;
+    white-space: nowrap;
   }
   
   @keyframes blink {
@@ -289,8 +297,9 @@
   /* Mobile Responsive Styles */
   @media (max-width: 768px) {
     .terminal-window {
-      margin: 20px 10px;
+      margin: 20px auto;
       border-radius: 8px;
+      max-width: 95%;
     }
     
     .terminal-content {
@@ -304,11 +313,15 @@
     
     .terminal-line {
       display: flex;
-      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      overflow-x: auto;
+      padding-bottom: 5px;
     }
     
     .terminal-line span.command {
-      margin-top: 4px;
+      margin-top: 0;
+      white-space: nowrap;
     }
     
     .ascii-art {
@@ -339,7 +352,8 @@
   
   @media (max-width: 480px) {
     .terminal-window {
-      margin: 10px 5px;
+      margin: 10px auto;
+      max-width: 98%;
     }
     
     .terminal-content {
